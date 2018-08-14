@@ -1,0 +1,46 @@
+<div id="container">
+  <div id="left">
+    <div id="left-top">
+      <h2>{{ userName }}</h2>
+        <ul id="list" *ngFor="let channelName of subscribedChannelsUniqueName">
+          <li>
+            <a (click)="selectedChannel(channelName)">{{ channelName }} </a>
+          </li>
+        </ul>
+    </div>
+    <div id="betweenTopBottom"></div>
+    <div id="left-bottom">
+      <span>Public channels (not subscribed)</span>
+      <div>
+        <ul id="list" *ngFor="let channelName of channelsUniqueName">
+          <li>
+            <a (click)="chooseNewChannel(channelName)">{{ channelName }} </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="right">
+    <div id="channel-name">
+      <span id="channelName">{{ channelName }}</span>
+      <button id="logoutbutton" type="button" (click)="logout()">Logout</button>
+    </div>
+    <div id="message-area">
+      <table *ngFor="let message of messagesArray">
+        <tr>
+          <td id="messages">{{ message }}</td>
+        </tr>
+      </table>
+    </div>
+    <div id="type-bar">
+      <!-- <input type="text" size="110" #messageee (keyup.enter)="addNewMessage(messageee)">
+      <button type="submit"  (click)="addNewMessage(messageee)" >Send</button> -->
+
+      <form [formGroup]="messageForm" (ngSubmit)="addNewMessage(messageee)">
+          <input type="text" size="110" #messageee formControlName="messageInput">
+          <button type="submit" [disabled]="!messageForm.valid" >Send</button>
+      </form>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+#container{
+    
+    height: 95vh;
+}
+
+#left{
+    height: 100%;
+    width: 25%;
+    background-color: rgb(112, 16, 201);
+    float: left;
+}
+
+#left-top{
+    height: 30%;
+    float: top;
+    background-color: rgb(112, 16, 201);
+    width:100%;
+    overflow-y:scroll;
+}
+
+#betweenTopBottom{
+    height: 0.3%;
+    float: bottom;
+    background-color: white;
+}
+
+#left-bottom{
+    height: 69.7%;
+    float: bottom;
+    background-color: rgb(112, 16, 201);
+    width:100%;
+    overflow-y:scroll;
+}
+
+#right{
+    
+    height: 100%;
+    width: 75%;
+    background-color: aqua;
+    float: right;
+}
+
+#channel-name{
+    height: 5%;
+    background-color: rgb(236, 236, 236);
+}
+
+#message-area{
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+}
+
+#type-bar{
+    height: 5%;
+    background-color: white;
+}
+
+button{
+    background-color: white;
+    /* width: 70px; */
+    border-radius: 15px;
+    border: 0px white;
+}
+
+input{
+    border-radius: 15px;
+    margin-left: 40px;
+}
+
+span{
+    margin-left: 40px;
+    color: white;
+}
+
+#channelName{
+    margin-left: 340px;
+    color: black;
+    size: "10";
+}
+
+ul{
+  list-style: none;
+}
+
+#messages{
+    padding-left: 4px;
+    padding-right: 4px; 
+    border-radius: 7px 14px;
+    height: 10px;
+    background-color: rgb(190, 128, 248);
+}
+
+h2, h3{
+    color: white;
+}
+
+#message-area{
+    height:90%;
+    width:100%;
+    overflow:scroll;
+    overflow-x:scroll;
+    overflow-y:scroll;
+}
+
+tr{
+    height: "10%";
+}
+
+#logoutbutton{
+    position: absolute;
+    left: 1250px;
+    top: 13px;
+}
